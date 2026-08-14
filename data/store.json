@@ -1,0 +1,821 @@
+{
+  "store": {
+    "name": "Minha Pensão",
+    "slug": "minha-pensao",
+    "currency": "BRL",
+    "deliveryFee": 5,
+    "minimumOrder": 20,
+    "open": true
+  },
+  "categories": [
+    {
+      "id": "c1",
+      "name": "Pratos",
+      "active": true
+    },
+    {
+      "id": "c2",
+      "name": "Acompanhamentos",
+      "active": true
+    },
+    {
+      "id": "c3",
+      "name": "Bebidas",
+      "active": true
+    }
+  ],
+  "products": [
+    {
+      "id": "p1",
+      "categoryId": "c1",
+      "name": "Prato da Casa",
+      "description": "Prato completo do dia.",
+      "price": 25,
+      "active": true,
+      "addons": [],
+      "stock": 10,
+      "available": true
+    },
+    {
+      "id": "p2",
+      "categoryId": "c1",
+      "name": "Carne de Sol",
+      "description": "Carne de sol com acompanhamentos.",
+      "price": 32,
+      "active": true,
+      "addons": [
+        "a1",
+        "a2"
+      ]
+    },
+    {
+      "id": "p3",
+      "categoryId": "c2",
+      "name": "Porção de Arroz",
+      "description": "Porção individual.",
+      "price": 8,
+      "active": true,
+      "addons": []
+    },
+    {
+      "id": "p4",
+      "categoryId": "c2",
+      "name": "Farofa",
+      "description": "Farofa temperada.",
+      "price": 7,
+      "active": true,
+      "addons": []
+    },
+    {
+      "id": "p5",
+      "categoryId": "c3",
+      "name": "Refrigerante Lata",
+      "description": "Escolha o sabor no pedido.",
+      "price": 6,
+      "active": true,
+      "addons": []
+    }
+  ],
+  "addons": [
+    {
+      "id": "a1",
+      "name": "Ovo",
+      "price": 3
+    },
+    {
+      "id": "a2",
+      "name": "Queijo coalho",
+      "price": 5
+    }
+  ],
+  "orders": [
+    {
+      "id": "ed901769-b918-47ff-aea7-152e21b2dac4",
+      "number": "1012",
+      "createdAt": "2026-08-14T19:23:02.728Z",
+      "clientRequestId": "final-142-qa",
+      "status": "ACCEPTED",
+      "statusHistory": [
+        {
+          "status": "NEW",
+          "at": "2026-08-14T19:23:02.728Z"
+        },
+        {
+          "status": "ACCEPTED",
+          "at": "2026-08-14T19:23:03.458Z"
+        }
+      ],
+      "customer": {
+        "name": "QA",
+        "phone": "21999999999",
+        "address": "Rua QA, 1",
+        "reference": ""
+      },
+      "items": [
+        {
+          "productId": "p1",
+          "name": "Prato da Casa",
+          "price": 25,
+          "qty": 1,
+          "addons": [],
+          "unitTotal": 25
+        },
+        {
+          "productId": "p5",
+          "name": "Refrigerante Lata",
+          "price": 6,
+          "qty": 1,
+          "addons": [],
+          "unitTotal": 6
+        }
+      ],
+      "subtotal": 31,
+      "deliveryFee": 5,
+      "total": 36,
+      "payment": "Pix",
+      "cashReceived": null,
+      "change": 0,
+      "notes": "",
+      "beverageConfirmed": true,
+      "updatedAt": "2026-08-14T19:23:03.458Z"
+    },
+    {
+      "id": "64851b2e-c004-4ff6-9cf3-c052e6ca59dd",
+      "number": "1011",
+      "createdAt": "2026-08-14T17:56:45.270Z",
+      "clientRequestId": "qa-b39",
+      "status": "AWAITING_STORE_APPROVAL",
+      "statusHistory": [
+        {
+          "status": "AWAITING_STORE_APPROVAL",
+          "at": "2026-08-14T17:56:45.270Z"
+        }
+      ],
+      "customer": {
+        "name": "Teste",
+        "phone": "21999999999",
+        "address": "Rua Teste 10",
+        "reference": ""
+      },
+      "items": [
+        {
+          "productId": "p1",
+          "name": "Prato da Casa",
+          "price": 25,
+          "qty": 1,
+          "addons": [],
+          "unitTotal": 25
+        },
+        {
+          "productId": "p5",
+          "name": "Refrigerante Lata",
+          "price": 6,
+          "qty": 1,
+          "addons": [],
+          "unitTotal": 6
+        }
+      ],
+      "subtotal": 31,
+      "deliveryFee": 5,
+      "total": 36,
+      "payment": "Dinheiro",
+      "cashReceived": 50,
+      "change": 14,
+      "notes": "",
+      "beverageConfirmed": true,
+      "beverageCheck": {
+        "required": true,
+        "confirmed": true,
+        "items": [
+          {
+            "name": "Refrigerante Lata",
+            "qty": 1
+          }
+        ]
+      }
+    },
+    {
+      "id": "71ef5e95-0179-4985-8f8e-9fbf25b5d2a5",
+      "number": "1010",
+      "createdAt": "2026-08-14T17:56:37.651Z",
+      "clientRequestId": "qa-b2",
+      "status": "AWAITING_STORE_APPROVAL",
+      "statusHistory": [
+        {
+          "status": "AWAITING_STORE_APPROVAL",
+          "at": "2026-08-14T17:56:37.651Z"
+        }
+      ],
+      "customer": {
+        "name": "Teste",
+        "phone": "21999999999",
+        "address": "Rua Teste 10",
+        "reference": ""
+      },
+      "items": [
+        {
+          "productId": "p1",
+          "name": "Prato da Casa",
+          "price": 25,
+          "qty": 1,
+          "addons": [],
+          "unitTotal": 25
+        },
+        {
+          "productId": "p5",
+          "name": "Refrigerante Lata",
+          "price": 6,
+          "qty": 1,
+          "addons": [],
+          "unitTotal": 6
+        }
+      ],
+      "subtotal": 31,
+      "deliveryFee": 5,
+      "total": 36,
+      "payment": "Dinheiro",
+      "cashReceived": 50,
+      "change": 14,
+      "notes": "",
+      "beverageConfirmed": true,
+      "beverageCheck": {
+        "required": true,
+        "confirmed": true,
+        "items": [
+          {
+            "name": "Refrigerante Lata",
+            "qty": 1
+          }
+        ]
+      }
+    },
+    {
+      "id": "ab628271-4152-4ef9-9443-7da35160b4e0",
+      "number": "1009",
+      "createdAt": "2026-08-14T17:02:30.186Z",
+      "clientRequestId": "42abc8a0-fefb-4df4-a913-50e189042022",
+      "status": "CANCELLED",
+      "statusHistory": [
+        {
+          "status": "AWAITING_STORE_APPROVAL",
+          "at": "2026-08-14T17:02:30.186Z"
+        },
+        {
+          "status": "CANCELLED",
+          "at": "2026-08-14T17:02:30.187Z",
+          "reason": "Produto acabou antes da preparação"
+        }
+      ],
+      "customer": {
+        "name": "Teste",
+        "phone": "21999999999",
+        "address": "Rua Teste, 100",
+        "reference": ""
+      },
+      "items": [
+        {
+          "productId": "p1",
+          "name": "Prato da Casa",
+          "price": 25,
+          "qty": 1,
+          "addons": [],
+          "unitTotal": 25
+        }
+      ],
+      "subtotal": 25,
+      "deliveryFee": 5,
+      "total": 30,
+      "payment": "Pix",
+      "cashReceived": null,
+      "change": 0,
+      "notes": "",
+      "beverageConfirmed": false,
+      "beverageCheck": {
+        "required": false,
+        "confirmed": false,
+        "items": []
+      },
+      "cancellationReason": "Produto acabou antes da preparação",
+      "updatedAt": "2026-08-14T17:02:30.187Z"
+    },
+    {
+      "id": "a6b6217e-999a-44bf-b102-837c79f23761",
+      "number": "1008",
+      "createdAt": "2026-08-14T17:00:45.061Z",
+      "clientRequestId": "ad07c35b-ec8d-43d8-994d-0a0e30cf3046",
+      "status": "ACCEPTED",
+      "statusHistory": [
+        {
+          "status": "AWAITING_STORE_APPROVAL",
+          "at": "2026-08-14T17:00:45.061Z"
+        },
+        {
+          "status": "ACCEPTED",
+          "at": "2026-08-14T17:00:45.062Z"
+        }
+      ],
+      "customer": {
+        "name": "Demo",
+        "phone": "21999999999",
+        "address": "Rua Demo, 10",
+        "reference": ""
+      },
+      "items": [
+        {
+          "productId": "p1",
+          "name": "Prato da Casa",
+          "price": 25,
+          "qty": 2,
+          "addons": [],
+          "unitTotal": 25
+        },
+        {
+          "productId": "p5",
+          "name": "Refrigerante Lata",
+          "price": 6,
+          "qty": 1,
+          "addons": [],
+          "unitTotal": 6
+        }
+      ],
+      "subtotal": 56,
+      "deliveryFee": 5,
+      "total": 61,
+      "payment": "Dinheiro",
+      "cashReceived": 100,
+      "change": 39,
+      "notes": "",
+      "beverageConfirmed": false,
+      "beverageCheck": {
+        "required": true,
+        "confirmed": true,
+        "checkedAt": "2026-08-14T17:00:45.063Z",
+        "items": [
+          {
+            "name": "Refrigerante Lata",
+            "qty": 1
+          }
+        ]
+      },
+      "approvedByStore": true,
+      "approvedAt": "2026-08-14T17:00:45.062Z",
+      "updatedAt": "2026-08-14T17:00:45.063Z"
+    },
+    {
+      "id": "ea5a68c7-1fc2-4f6b-adc2-f6e4c0511ae3",
+      "number": "1007",
+      "createdAt": "2026-08-14T16:56:59.064Z",
+      "clientRequestId": "60d03208-9db5-477c-89cc-19dd625e303d",
+      "status": "PREPARING",
+      "statusHistory": [
+        {
+          "status": "AWAITING_STORE_APPROVAL",
+          "at": "2026-08-14T16:56:59.064Z"
+        },
+        {
+          "status": "ACCEPTED",
+          "at": "2026-08-14T16:56:59.065Z"
+        },
+        {
+          "status": "PREPARING",
+          "at": "2026-08-14T16:56:59.068Z"
+        }
+      ],
+      "customer": {
+        "name": "Teste E2E",
+        "phone": "21999999999",
+        "address": "Rua Teste, 100",
+        "reference": "Portão azul"
+      },
+      "items": [
+        {
+          "productId": "p1",
+          "name": "Prato da Casa",
+          "price": 25,
+          "qty": 2,
+          "addons": [],
+          "unitTotal": 25
+        },
+        {
+          "productId": "p5",
+          "name": "Refrigerante Lata",
+          "price": 6,
+          "qty": 1,
+          "addons": [],
+          "unitTotal": 6
+        }
+      ],
+      "subtotal": 56,
+      "deliveryFee": 5,
+      "total": 61,
+      "payment": "Dinheiro",
+      "cashReceived": 100,
+      "change": 39,
+      "notes": "Teste",
+      "beverageConfirmed": true,
+      "beverageCheck": {
+        "required": true,
+        "confirmed": true,
+        "checkedAt": "2026-08-14T16:56:59.066Z",
+        "items": [
+          {
+            "name": "Refrigerante Lata",
+            "qty": 1
+          }
+        ]
+      },
+      "approvedByStore": true,
+      "approvedAt": "2026-08-14T16:56:59.065Z",
+      "updatedAt": "2026-08-14T16:56:59.068Z"
+    },
+    {
+      "id": "dd997929-ed84-43ca-9d5b-5a73dae35960",
+      "number": "1006",
+      "createdAt": "2026-08-14T16:17:30.004Z",
+      "clientRequestId": "50a13c24-0a7b-4304-8f75-99b33b1c7d6c",
+      "status": "NEW",
+      "statusHistory": [
+        {
+          "status": "NEW",
+          "at": "2026-08-14T16:17:30.004Z"
+        }
+      ],
+      "customer": {
+        "name": "Teste Operacional",
+        "phone": "21999999999",
+        "address": "Rua Teste, 100"
+      },
+      "items": [
+        {
+          "productId": "p1",
+          "name": "Prato da Casa",
+          "price": 25,
+          "qty": 1,
+          "addons": [],
+          "unitTotal": 25
+        },
+        {
+          "productId": "p5",
+          "name": "Refrigerante Lata",
+          "price": 6,
+          "qty": 1,
+          "addons": [],
+          "unitTotal": 6
+        }
+      ],
+      "subtotal": 31,
+      "deliveryFee": 5,
+      "total": 36,
+      "payment": "Pix",
+      "cashReceived": null,
+      "change": 0,
+      "notes": "Sem cebola",
+      "beverageConfirmed": true,
+      "beverageCheck": {
+        "required": true,
+        "confirmed": true,
+        "checkedAt": "2026-08-14T16:17:30.005Z",
+        "items": [
+          {
+            "name": "Refrigerante Lata",
+            "qty": 1
+          }
+        ]
+      },
+      "updatedAt": "2026-08-14T16:17:30.005Z"
+    },
+    {
+      "id": "6d6c0cd3-c524-4838-8b7f-6ab00029829a",
+      "number": "1005",
+      "createdAt": "2026-08-14T16:10:15.572Z",
+      "clientRequestId": "19f9a6cd-03f4-4683-8f2e-4d8036b80364",
+      "status": "PREPARING",
+      "statusHistory": [
+        {
+          "status": "NEW",
+          "at": "2026-08-14T16:10:15.572Z"
+        },
+        {
+          "status": "ACCEPTED",
+          "at": "2026-08-14T16:10:15.575Z"
+        },
+        {
+          "status": "PREPARING",
+          "at": "2026-08-14T16:10:15.577Z"
+        }
+      ],
+      "customer": {
+        "name": "Teste BDK",
+        "phone": "21999999999",
+        "address": "Rua Teste, 100"
+      },
+      "items": [
+        {
+          "productId": "p1",
+          "name": "Prato da Casa",
+          "price": 25,
+          "qty": 1,
+          "addons": [],
+          "unitTotal": 25
+        }
+      ],
+      "subtotal": 25,
+      "deliveryFee": 5,
+      "total": 30,
+      "payment": "Dinheiro",
+      "cashReceived": 100,
+      "change": 70,
+      "notes": "Teste operacional",
+      "beverageConfirmed": true,
+      "beverageCheck": {
+        "required": false,
+        "confirmed": true,
+        "checkedAt": "2026-08-14T16:10:15.574Z",
+        "items": []
+      },
+      "updatedAt": "2026-08-14T16:10:15.577Z"
+    },
+    {
+      "id": "fa63d5d4-7605-478c-92f7-65c7052d31fb",
+      "number": "1004",
+      "createdAt": "2026-08-14T15:45:58.525Z",
+      "clientRequestId": "61eedba9-ef7d-41ec-9f8c-6a5e734d58bc",
+      "status": "NEW",
+      "statusHistory": [
+        {
+          "status": "NEW",
+          "at": "2026-08-14T15:45:58.525Z"
+        }
+      ],
+      "customer": {
+        "name": "Teste BDK",
+        "phone": "21999999999",
+        "address": "Rua Teste, 100"
+      },
+      "items": [
+        {
+          "productId": "p1",
+          "name": "Prato da Casa",
+          "price": 25,
+          "qty": 1,
+          "addons": [],
+          "unitTotal": 25
+        }
+      ],
+      "subtotal": 25,
+      "deliveryFee": 5,
+      "total": 30,
+      "payment": "Pix",
+      "cashReceived": null,
+      "change": 0,
+      "notes": "",
+      "beverageConfirmed": true
+    },
+    {
+      "id": "92aebb72-d76a-42f0-b98d-530d0316e9cc",
+      "number": "1003",
+      "createdAt": "2026-08-14T15:14:07.127Z",
+      "clientRequestId": "a4935ece-58ee-4ed3-b126-8169f1f3c014",
+      "status": "NEW",
+      "statusHistory": [
+        {
+          "status": "NEW",
+          "at": "2026-08-14T15:14:07.127Z"
+        }
+      ],
+      "customer": {
+        "name": "Teste",
+        "phone": "219",
+        "address": "Rua"
+      },
+      "items": [
+        {
+          "productId": "p1",
+          "name": "Prato da Casa",
+          "price": 25,
+          "qty": 1,
+          "addons": [],
+          "unitTotal": 25
+        }
+      ],
+      "subtotal": 25,
+      "deliveryFee": 5,
+      "total": 30,
+      "payment": "Dinheiro",
+      "cashReceived": 100,
+      "change": 70,
+      "notes": "",
+      "beverageConfirmed": true
+    },
+    {
+      "id": "68222af4-6caf-4aa5-a000-13eb05f0b4c0",
+      "number": "1002",
+      "createdAt": "2026-08-14T14:24:09.964Z",
+      "status": "NEW",
+      "customer": {
+        "name": "Teste",
+        "phone": "21999999999",
+        "address": "Rua Teste"
+      },
+      "items": [
+        {
+          "productId": "p1",
+          "name": "Prato da Casa",
+          "price": 25,
+          "qty": 1
+        },
+        {
+          "productId": "p5",
+          "name": "Refrigerante Lata",
+          "price": 6,
+          "qty": 1
+        }
+      ],
+      "subtotal": 31,
+      "deliveryFee": 5,
+      "total": 36,
+      "payment": "Pix",
+      "notes": "",
+      "beverageConfirmed": true
+    },
+    {
+      "id": "f00e90ba-8639-43ad-89be-d0dba18d78c1",
+      "number": "1001",
+      "createdAt": "2026-08-14T14:24:09.959Z",
+      "status": "NEW",
+      "customer": {
+        "name": "Teste",
+        "phone": "21999999999",
+        "address": "Rua Teste"
+      },
+      "items": [
+        {
+          "productId": "p1",
+          "name": "Prato da Casa",
+          "price": 25,
+          "qty": 1
+        }
+      ],
+      "subtotal": 25,
+      "deliveryFee": 5,
+      "total": 30,
+      "payment": "Pix",
+      "notes": "",
+      "beverageConfirmed": true
+    }
+  ],
+  "events": [
+    {
+      "id": "0c1145c8-f0d7-475c-98e4-fe56804a6590",
+      "type": "ORDER_CREATED",
+      "at": "2026-08-14T14:24:09.959Z",
+      "payload": {
+        "orderId": "f00e90ba-8639-43ad-89be-d0dba18d78c1",
+        "total": 30,
+        "itemCount": 1
+      }
+    },
+    {
+      "id": "02fd78b7-36e5-4ea6-80e2-bc674998b6db",
+      "type": "ORDER_CREATED",
+      "at": "2026-08-14T14:24:09.964Z",
+      "payload": {
+        "orderId": "68222af4-6caf-4aa5-a000-13eb05f0b4c0",
+        "total": 36,
+        "itemCount": 2
+      }
+    },
+    {
+      "id": "1c5c1021-d453-4d60-ad2d-99f35f3c9994",
+      "type": "ORDER_CREATED",
+      "at": "2026-08-14T15:14:07.127Z",
+      "payload": {
+        "orderId": "92aebb72-d76a-42f0-b98d-530d0316e9cc",
+        "total": 30,
+        "itemCount": 1
+      }
+    },
+    {
+      "id": "d0a700ed-2576-4a5b-814e-bb87a8bc7c6f",
+      "type": "ORDER_CREATED",
+      "at": "2026-08-14T15:45:58.525Z",
+      "payload": {
+        "orderId": "fa63d5d4-7605-478c-92f7-65c7052d31fb",
+        "total": 30,
+        "itemCount": 1
+      }
+    },
+    {
+      "id": "288cd51c-3d40-4582-96e5-0ed3fdc72650",
+      "type": "ORDER_CREATED",
+      "at": "2026-08-14T16:10:15.572Z",
+      "payload": {
+        "orderId": "6d6c0cd3-c524-4838-8b7f-6ab00029829a",
+        "total": 30,
+        "itemCount": 1
+      }
+    },
+    {
+      "id": "3b8ac03a-0fc1-4620-950e-c760d4b0c792",
+      "type": "ORDER_CREATED",
+      "at": "2026-08-14T16:17:30.004Z",
+      "payload": {
+        "orderId": "dd997929-ed84-43ca-9d5b-5a73dae35960",
+        "total": 36,
+        "itemCount": 2
+      }
+    },
+    {
+      "id": "0c7115d3-2294-4cf7-b2be-abc30e9ed031",
+      "type": "CUSTOMER_CONFIRMED_ORDER",
+      "at": "2026-08-14T16:56:59.064Z",
+      "payload": {
+        "orderId": "ea5a68c7-1fc2-4f6b-adc2-f6e4c0511ae3",
+        "approvalMode": "OWNER",
+        "total": 61
+      }
+    },
+    {
+      "id": "cd167dba-d57a-4e25-b45a-e5e36e3dc473",
+      "type": "CUSTOMER_CONFIRMED_ORDER",
+      "at": "2026-08-14T17:00:45.061Z",
+      "payload": {
+        "orderId": "a6b6217e-999a-44bf-b102-837c79f23761",
+        "approvalMode": "OWNER",
+        "total": 61
+      }
+    },
+    {
+      "id": "70003f1a-d5c5-4e42-81e8-2ffeb0675636",
+      "type": "CUSTOMER_CONFIRMED_ORDER",
+      "at": "2026-08-14T17:02:30.186Z",
+      "payload": {
+        "orderId": "ab628271-4152-4ef9-9443-7da35160b4e0",
+        "approvalMode": "OWNER",
+        "total": 30
+      }
+    },
+    {
+      "id": "62de2072-c3a0-4b23-9966-e3f39098259d",
+      "type": "CUSTOMER_CONFIRMED_ORDER",
+      "at": "2026-08-14T17:56:37.651Z",
+      "payload": {
+        "orderId": "71ef5e95-0179-4985-8f8e-9fbf25b5d2a5",
+        "approvalMode": "OWNER",
+        "total": 36
+      }
+    },
+    {
+      "id": "ef5e9069-0f69-4c39-9a79-7d4280a3cca1",
+      "type": "CUSTOMER_CONFIRMED_ORDER",
+      "at": "2026-08-14T17:56:45.270Z",
+      "payload": {
+        "orderId": "64851b2e-c004-4ff6-9cf3-c052e6ca59dd",
+        "approvalMode": "OWNER",
+        "total": 36
+      }
+    },
+    {
+      "id": "a334d3f0-30a6-4ec0-b9e0-bb86cce2b36e",
+      "type": "ORDER_CREATED",
+      "at": "2026-08-14T19:23:02.728Z",
+      "payload": {
+        "orderId": "ed901769-b918-47ff-aea7-152e21b2dac4",
+        "total": 36,
+        "itemCount": 2
+      }
+    },
+    {
+      "id": "62ea6cf1-c93e-478b-9d6b-a7a14c485ee3",
+      "type": "ORDER_STATUS_CHANGED",
+      "at": "2026-08-14T19:23:03.458Z",
+      "payload": {
+        "orderId": "ed901769-b918-47ff-aea7-152e21b2dac4",
+        "status": "ACCEPTED"
+      }
+    },
+    {
+      "id": "77d3e6fd-c4c9-40b5-9db7-d13034a23a9e",
+      "type": "ORDER_CREATED",
+      "at": "2026-08-14T19:48:58.173Z",
+      "payload": {
+        "orderId": "88c3dd09-ce99-42e4-b191-6dbe885352aa",
+        "total": 55,
+        "itemCount": 1
+      }
+    }
+  ],
+  "promotions": [],
+  "campaigns": [],
+  "settings": {
+    "orderApprovalMode": "OWNER",
+    "demoAccess": {
+      "user": "loja",
+      "pin": "1234"
+    },
+    "printer": {
+      "mode": "PREVIEW",
+      "name": null
+    }
+  }
+}

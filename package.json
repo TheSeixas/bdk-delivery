@@ -1,0 +1,12 @@
+{
+  "name": "bdk-delivery-mvp",
+  "version": "0.1.44",
+  "private": true,
+  "description": "BDK clean-room delivery MVP",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "pg": "^8.16.3"
+  }
+}

@@ -4,7 +4,8 @@
   "private": true,
   "description": "BDK clean-room delivery MVP",
   "scripts": {
-    "start": "node server.js"
+    "start": "node server.js",
+    "test:smoke": "node qa/smoke.mjs"
   },
   "dependencies": {
     "pg": "^8.16.3"
